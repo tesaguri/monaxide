@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="Shift_JIS">
+    <link rel="stylesheet" href="/test/read.css">
+    <script src="/test/read.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="topnav"><ul>
+        <li class="menutopnav"><a class="menuitem" href="/">サイト名</a></li>
+        <li class="menutopnav"><a class="menuitem board-top">■掲示板に戻る■</a></li>
+        <li class="menutopnav"><a class="menuitem all">全部</a></li>
+        <li class="menutopnav"><a class="menuitem 1-100">1-100</a></li>
+        <li class="menutopnav"><a class="menuitem l50">最新50</a></li>
+      </ul></nav>
+    </header>
+    <main>
+      <h1 id="title" class="title"></h1>
+      <div id="posts" class="thread"></div>
+    </main>
+    <button id="reload-button" disabled>再読み込み</button>
+    <form id="post-form" method="POST" accept-charset="Shift_JIS" action="/test/bbs.cgi">
+      <input name="FORM" class="form-name formelem" placeholder="名前">
+      <input name="mail" class="form-mail formelem" placeholder="コマンド"><br>
+      <textarea name="MESSAGE" class="form-body formelem" placeholder="本文" wrap="off"></textarea><br>
+      <button id="submit-button" type="submit" class="submitbtn" disabled>書き込む</button>
+    </form>
+    <footer>
+      <nav class="bottomnav"><ul>
+        <li class="menubottomnav"><a class="menuitem" href="/">サイト名</a>
+        <li class="menubottomnav"><a class="menuitem board-top">■掲示板に戻る■</a>
+        <li class="menubottomnav"><a class="menuitem all">全部</a></li>
+        <li class="menubottomnav"><a class="menuitem prev">前100</a></li>
+        <li class="menubottomnav"><a class="menuitem next">次100</a></li>
+        <li class="menubottomnav"><a class="menuitem l50">最新50</a></li>
+      </ul></nav>
+    </footer>
+  </body>
+</html>

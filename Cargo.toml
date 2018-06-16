@@ -1,0 +1,25 @@
+[package]
+name = "monaxide"
+version = "0.1.0"
+authors = ["Daiki Mizukami <tesaguriguma@gmail.com>"]
+license = "AGPL-3.0-or-later"
+
+[dependencies]
+ascii = "0.8"
+atoi = "0.2"
+cfg-if = "0.1"
+checked = "0.5"
+chrono = "0.4"
+lazy-init = "0.3"
+log = "0.4"
+owning_ref = "0.3"
+hyper = "0.10"
+memchr = "2"
+parking_lot = { version = "0.5", features = ["nightly", "owning_ref"] }
+percent-encoding = "1"
+rocket = "0.3"
+rocket_codegen = "0.3"
+serde = "1"
+serde_derive = "1"
+time = "0.1"
+typemap = "0.3"
